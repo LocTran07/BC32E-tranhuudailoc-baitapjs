@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- bài 1
+    đầu vào
+    nhập 3 số nguyên
+    xử lý
+    tạo biến a b c
+    cho người dùng nhập
+    lấy giá trị từ người dùng nhập gán vô so1 so2 so3
+    dùng if, else if nếu a > b >c thì c b a
+    nếu a>c>b thì b c a
+    nếu b > a > c thì c a b
+    nếu b > c > a thì a c b
+    nếu c > a > b thì b a c
+    nếu c > b > a thì a b c
+    đầu ra
+    xếp sếp theo thứ tự tăng dần
+    c b a
+    b c a
+    c a b
+    a c b
+    b a c
+    a b c -->
+    <div class="mb-200px">
+        <h3>so sánh số</h3>
+        <form class="alert alert-primary" action="">
+            <input class="col-7 mb-3" type="text" id="sothu1" placeholder="nhập số 1">
+            <input class="col-7 mb-3" type="text" id="sothu2" placeholder="nhập số 2">
+            <input class="col-7 mb-3" type="text" id="sothu3" placeholder="nhập số 3">
+            <button id="btn1" class=" btn btn-danger col-7 mt-3">tính điểm trung bình và XL</button>
+            <p id="sosanh1" class="alert alert-light mt-3 col-7"></p>
+        </form>
+
+        <!-- bài 2
+input chọn user( bố mẹ anh trai em gái)
+xử lý
+tạo biến thanhVien, ketqua
+nếu = b là bố 
+nếu = m là mẹ
+nếu = alà anh trai 
+nếu = e là em gái
+output
+xuất kết quả
+chon -->
+        <h3>chào thành viên</h3>
+        <form class="alert alert-primary" action="">
+            <select name="" id="user" class="col-7">
+                <option value="b">Bố</option>
+                <option value="m">Mẹ</option>
+                <option value="a">Anh trai</option>
+                <option value="e">Em gái</option>
+            </select>
+            <button id="btn2" class=" btn btn-danger col-7 mt-3">Nhận diện</button>
+            <p id="chao" class="alert alert-light mt-3 col-7"></p>
+        </form>
+
+        <!-- input 
+nhập 3 số nguyên 
+xử lý
+tạo biến a b c, lấy giá trị từ người nhập
+nếu chia hết cho 2 là chẵn còn ko là lẻ
+output 
+xuất kết quả  -->
+        <h3>so sánh số</h3>
+        <form class="alert alert-primary" action="">
+            <input class="col-3 mb-3" type="text" id="sothu11" placeholder="nhập số 1">
+            <input class="col-3 mb-3" type="text" id="sothu22" placeholder="nhập số 2">
+            <input class="col-3 mb-3" type="text" id="sothu33" placeholder="nhập số 3">
+            <button id="btn3" class=" btn btn-danger col-9 mt-3">Đếm</button>
+            <p id="dem" class="alert alert-light mt-3 col-7"></p>
+        </form>
+
+
+        <!-- bài 4
+        input 
+        nhập 3 cạnh
+        xử lý 
+        tạo biến a b c , ketQua
+        Đều: Nếu 3 cạnh bằng nhau. Vd:a = 3, b=3 c=3
+        Cân: Nếu 2 cạnh bằng nhau. Vd: a=2, b=2, c=1
+        Vuông: c^2 = a^2 + b^2. Vd: a=3, b=4, c=5
+        output
+        xuất kế quả  -->
+        <h3>dự đoán loại tam giác</h3>
+        <form class="alert alert-primary" action="">
+            <input class="col-3 mb-3" type="text" id="canh1" placeholder="nhập cạnh 1">
+            <input class="col-3 mb-3" type="text" id="canh2" placeholder="nhập cạnh 2">
+            <input class="col-3 mb-3" type="text" id="canh3" placeholder="nhập cạnh 3">
+            <button id="btn4" class=" btn btn-danger col-9 mt-3">Đếm</button>
+            <p id="tamgiac" class="alert alert-light mt-3 col-7"></p>
+        </form>
+
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
