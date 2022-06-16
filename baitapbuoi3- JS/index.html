@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1>bài 1</h1>
+  <div class="alert alert-success" style=" width: 250px;">
+    <input type="text" id="luong1ngay" placeholder="Nhập lương một ngày" class="mb-3">
+    <input type="text" id="songaylam" placeholder="số ngày làm">
+    <br>
+    <button class="mt-3 btn btn-danger" id="tinhluong">Tính Lương</button>
+    <div class="alert alert-dark mt-3">
+      <p><i style="color: red;" class="fa-solid fa-hand-holding-dollar mr-2"></i>
+        <span id="tongluong"></span>
+      </p>
+    </div>
+  </div>
+
+  <h1>bài 2</h1>
+  <div class="alert alert-success" style=" width: 250px;">
+    <input type="text" id="so1" placeholder="Nhập số thứ 1 " class="mb-3">
+    <input type="text" id="so2" placeholder="Nhập số thứ 2" class="mb-3">
+    <input type="text" id="so3" placeholder="Nhập số thứ 3" class="mb-3">
+    <input type="text" id="so4" placeholder="Nhập số thứ 4" class="mb-3">
+    <input type="text" id="so5" placeholder="Nhập số thứ 5" class="mb-3">
+    <br>
+    <button class="mt-3 btn btn-danger" id="tinhtrungbinh">Tính trung bình</button>
+    <div class="alert alert-dark mt-3">
+      <p><i style="color: red;" class="fa-solid fa-hand-holding-dollar mr-2"></i>
+        <span id="trungbinh"></span>
+      </p>
+    </div>
+  </div>
+
+  <h1>bài 3</h1>
+  <div class="alert alert-success" style=" width: 250px;">
+    <input type="text" id="sotienusd" placeholder="Nhập số tiền USD" class="mb-3">
+    <br>
+    <button class="mt-3 btn btn-danger" id="quydoi">Quy đổi tiền</button>
+    <div class="alert alert-dark mt-3">
+      <p><i style="color: red;" class="fa-solid fa-hand-holding-dollar mr-2"></i>
+        <span id="tongtienusd"></span>
+      </p>
+    </div>
+  </div>
+
+  <h1>bài 4</h1>
+  <div class="alert alert-success" style=" width: 250px;">
+    <input type="text" id="chieudai" placeholder="Nhập chiều dài" class="mb-3">
+    <input type="text" id="chieurong" placeholder="Nhập chiều rộng">
+    <br>
+    <button class="mt-3 btn btn-danger" id="tinhdtcv">Tính</button>
+    <div class="alert alert-dark mt-3">
+      <p><i style="color: red;" class="fa-solid fa-hand-holding-dollar mr-2"></i>
+        <span id="dtcv"></span>
+      </p>
+    </div>
+  </div>
+
+
+  <h1>bài 5</h1>
+  <div class="alert alert-success" style=" width: 250px;">
+    <input type="text" id="nhapso" placeholder="Nhập số có 2 chữ số" class="mb-3">
+    <br>
+    <button class="mt-3 btn btn-danger" id="tinhtong">Tính tổng</button>
+    <div class="alert alert-dark mt-3">
+      <p><i style="color: red;" class="fa-solid fa-hand-holding-dollar mr-2"></i>
+        <span id="tong"></span>
+      </p>
+    </div>
+  </div>
+
+
+  <h1>bài 6</h1>
+  <form action="">
+    <div class="alert alert-success" style=" width: 250px;">
+      <input type="text" id="nhapcmt" placeholder="" class="mb-3">
+      <br>
+      <button class="mt-3 btn btn-danger" id="dangcmt">dangcmt</button>
+      <div class="alert alert-dark mt-3">
+        <p><i style="color: red;" class="fa-solid fa-hand-holding-dollar mr-2"></i>
+          <span id="cmt"></span>
+        </p>
+      </div>
+    </div>
+
+
+  </form>
+  <!-- / bai1
+  document.getElementById('tinhluong').onclick = function () {
+      var luong1ngay = document.getElementById('luong1ngay').value;
+      var soNgaylam = document.getElementById('songaylam').value;
+      var tongLuong = luong1ngay*soNgaylam;
+      document.getElementById('tongluong').innerText = tongLuong
+  }
+  
+  // bai2
+  document.getElementById('tinhtrungbinh').onclick = function () {
+      var so1 = +document.getElementById('so1').value;
+      var so2 = +document.getElementById('so2').value;
+      var so3 = +document.getElementById('so3').value;
+      var so4 = +document.getElementById('so4').value;
+      var so5 = +document.getElementById('so5').value;
+      var trungBinh = (so1 + so2 + so3 + so4 + so5)/5;
+      document.getElementById('trungbinh').innerHTML = trungBinh
+  }
+  
+  // bai3
+  document.getElementById('quydoi').onclick = function () {
+      var tyGia =  new Intl.NumberFormat('vn-VN').format(23500);
+      var tienUsd = +document.getElementById('sotienusd').value;
+      var tongTienusd = tienUsd*tyGia
+      document.getElementById('tongtienusd').innerHTML = tongTienusd
+  }
+  
+  // bai4
+  document.getElementById('tinhdtcv').onclick = function () {
+      var chieuDai = +document.getElementById('chieudai').value;
+      var chieuRong = +document.getElementById('chieurong').value;
+      var dienTich = chieuDai*chieuRong;
+      var chuVi = (chieuDai+chieuRong)*2;
+      document.getElementById('dtcv').innerHTML = 'Diện tích: '+ dienTich + '; ' + 'Chu vi: '+chuVi
+  }
+  
+  
+  // bai5
+  document.getElementById('tinhtong').onclick = function () {
+      var so = +document.getElementById('nhapso').value;
+      var donVi = so%10;
+      var chuc= Math.floor(so/10 );
+      var tong = donVi + chuc;
+      document.getElementById('tong').innerHTML = tong;
+  } -->
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
