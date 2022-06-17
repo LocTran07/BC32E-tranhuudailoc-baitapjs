@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="mb-200px">
+    <div class="alert alert-success">
+      <h3> xét điểm chuẩn</h3>
+      <input class="col-7 mb-3" type="text" id="diemchuan" placeholder="nhập điểm chuẩn">
+      <input class="col-7 mb-3" type="text" id="diem1" placeholder="nhập điểm toán">
+      <input class="col-7 mb-3" type="text" id="diem2" placeholder="nhập diểm lý">
+      <input class="col-7 mb-3" type="text" id="diem3" placeholder="nhập điểm hóa">
+      <label class="col-7" for="khuvuc">khu vực ưu tiên</label>
+      <select class="col-7" name="" id="khuvuc">
+        <option value="2">A</option>
+        <option value="1">B</option>
+        <option value="0.25">C</option>
+        <option value="0">X</option>
+      </select>
+      <label class="col-7" for="doituong">đối tượng ưu tiên</label>
+      <select class="col-7" name="" id="doituong">đối tượng ưu tiên
+        <option value="2.5">1</option>
+        <option value="1.5">2</option>
+        <option value="1">3</option>
+        <option value="0">0</option>
+      </select>
+      <button id="btn1" class=" btn btn-danger col-7 mt-3">Xét</button>
+      <p id="xet" class="alert alert-primary mt-3 col-7"></p>
+
+    </div>
+    <div class="alert alert-warning">
+      <h3> tinh tien dien</h3>
+    <input class="col-7 mb-3" type="text" id="ten" placeholder="nhập ten">
+    <input class="col-7 mb-3" type="text" id="kw" placeholder="nhập so kw">
+    <button id="btn2" class=" btn btn-danger col-7 mt-3">Tinh</button>
+    <p id="dien" class="alert alert-primary mt-3 col-7"></p>
+    </div>
+
+   <div class="alert alert-info">
+    <h3> tinh thue thu nhap</h3>
+    <input class="col-7 mb-3" type="text" id="ten2" placeholder="nhập ten">
+    <input class="col-7 mb-3" type="text" id="doanhthu" placeholder="nhập doanh thu">
+    <input class="col-7 mb-3" type="text" id="songuoi" placeholder="so nguoi phu thuoc">
+    <button id="btn3" class=" btn btn-danger col-7 mt-3">Tinh</button>
+    <p id="thue" class="alert alert-primary mt-3 col-7"></p>
+   </div>
+
+    <div class="alert alert-secondary">
+      <h3> tinh tien cap</h3>
+    <select class="col-7 mb-3" name="" id="loaihinh" onchange="taoKetNoi()">
+      <option value="cty">doanh nghiep</option>
+      <option value="giadinh">ho gia dinh</option>
+    </select>
+    <div id="ketnoi"></div>
+    <input class="col-7 mb-3" type="text" id="makhachhang" placeholder="nhập ma khach hang">
+    <input class="col-7 mb-3" type="text" id="sokenh" placeholder="nhập so kenh">
+    <button id="btn4" class=" btn btn-danger col-7 mt-3">Tinh</button>
+    <p id="tongtiencap" class="alert alert-primary mt-3 col-7"></p>
+
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

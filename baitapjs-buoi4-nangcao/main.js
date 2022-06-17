@@ -29,14 +29,57 @@ document.getElementById('btn1').onclick = function (event) {
         ketQua = '30/10/' + nam
     } else if (ngay === 1 && thang === 12) {
         ketQua = '31/11/' + nam
-    } else {
+    }else if (ngay>31||thang>12) {
+        ketQua = 'khong xác định'
+    } 
+    else {
         ketQua = --ngay+"/"+thang+'/'+nam
     }
    
 
     document.getElementById('homtruoc').innerHTML = ketQua
 }
+document.getElementById('btnmai').onclick = function (event) {
+    event.preventDefault()
+    var ngay = +document.getElementById('ngay').value;
+    var thang = +document.getElementById('thang').value;
+    var nam = +document.getElementById('nam').value;
 
+
+    if (ngay === 31 && thang === 1) {
+        ketQua = ' 1/2/' + nam
+    } else if (ngay === 28 && thang === 2) {
+        ketQua = '1/3/' + nam
+    } else if (ngay === 31 && thang === 3) {
+        ketQua = '1/4/' + nam
+    } else if (ngay === 30 && thang === 4) {
+        ketQua = '1/5/' + nam
+    } else if (ngay ===31 && thang === 5) {
+        ketQua = '1/6/' + nam
+    } else if (ngay=== 30 && thang === 6) {
+        ketQua = '1/7/' + nam
+    } else if (ngay === 31 && thang === 7) {
+        ketQua = '1/8/' + nam
+    } else if (ngay === 31 && thang ===8) {
+        ketQua = '1/9/' + nam
+    } else if (ngay === 30 && thang === 9) {
+        ketQua = '1/10/' + nam
+    } else if (ngay === 31 && thang === 10) {
+        ketQua = '1/11/' + nam
+    } else if (ngay === 30 && thang === 11) {
+        ketQua = '1/12/' + nam
+    } else if (ngay === 31 && thang === 12) {
+        ketQua = '1/1/' + nam
+    }else if (ngay>31||thang>12) {
+        ketQua = 'khong xác định'
+    }
+     else {
+        ketQua = ++ngay+"/"+thang+'/'+nam
+    }
+   
+
+    document.getElementById('homtruoc').innerHTML = ketQua
+}
 
 document.getElementById('btn2').onclick = function (event) {
     event.preventDefault()
