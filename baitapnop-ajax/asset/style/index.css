@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.way {
+    border-top: 1px solid gray;
+    border-bottom:  1px solid gray;
+}
+input{
+    width: 100%;
+}
+.row1{
+    border: 1px solid black;
+}
+.row2{
+    border: 1px solid black;
+    padding: 15px 0 15px;
+    background-color: rgba(180, 178, 178, 0.205);
+}
+/* th{
+    width: 16.6%;
+}
+td{
+    width: 12%;
+} */
+thead{
+    background-color: grey;
+}
+table{
+    width: 100%;
+}
+thead th:first-child{
+    padding-left: 10px;
+}
+span{
+    display: inline-block;
+    padding: 15px 0 15px;
+    font-size: 25px;
+}
+tbody button{
+    margin: 5px;
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.img {
+    width: 45px;
+    height: 45px;
+}
